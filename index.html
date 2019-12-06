@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="assets/css/reset.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand|Dosis"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Food Trivia Game</title>
+    <style type="text/css">
+      body {
+        background-image: url(foodTriviaBckg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="myContainer">
+      <div id="instructions">
+        <h1>Food Trivia Game</h1>
+        <p>
+          This game has a total of 5 questions to complete! Here are the details
+          of the game:
+        </p>
+        <ul>
+          <li>
+            Timer starts once you begin the game. You have 10 seconds to answer
+            each question
+          </li>
+          <li>
+            Once you answer the question you will get feedback if your answer is
+            correct or incorrect. You will be able to see this once the question
+            as been answered.
+          </li>
+          <li>
+            If you don't answer the question before the timer runs out, it will
+            counted it as unanswered question
+          </li>
+          <li>Your total score will be displayed at the end of the game.</li>
+        </ul>
+        <p>Click the button below to begin playing the game.</p>
+
+        <button id="play">Play game</button>
+      </div>
+      <!--end instructions-->
+
+      <div id="timer"></div>
+
+      <div id="triviaBlock"></div>
+    </div>
+    <!--end myContainer-->
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+
+    <script src="assets/javascript/app.js"></script>
+  </body>
+</html>
